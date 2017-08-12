@@ -1,12 +1,345 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header>
+    <a>
+      <h1>Device</h1>
+    </a>
+
+    <nav>
+      <ul>
+        <li><input type="search" placeholder="Поиск по сайту" id="search_item" name="search"></li>
+        <li>
+          <a href="#">Войти</a>
+          <span>Валентин Петухов <a href="#">Выйти</a></span>
+        </li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+
+      <section>
+        <div>
+          <input type="checkbox" id="open-close">
+          <label for="open-close">Каталог товаров</label>
+          <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Умные часы</a>
+            </li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Избранные товары</h2>
+      <article>
+        <input type="radio" id="slide_hero_1" name="slides_hero" checked>
+        <div>
+          <img src="http://via.placeholder.com/384x486" alt="Длиннющая селфи-палка" width="384" height="486">
+          <section>
+            <h3>Делай селфи как Бен Стиллер!</h3>
+            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+            <div>
+              <a href="#">Подробнее</a>
+              <label for="slide_hero_1">Селфи-палки</label>
+              <label for="slide_hero_2">Фитнес-браслеты</label>
+              <label for="slide_hero_3">Квадрокоптеры</label>
+            </div>
+
+            <table>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+            </table>
+
+          </section>
+        </div>
+      </article>
+
+      <article>
+        <input type="radio" id="slide_hero_2" name="slides_hero">
+        <div>
+          <img src="http://via.placeholder.com/345x485" alt="Анорексобраслет" width="345" height="485">
+          <section>
+            <h3>Худеем правильно!</h3>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+
+            <div>
+              <a href="#">Подробнее</a>
+              <label for="slide_hero_1">Селфи-палки</label>
+              <label for="slide_hero_2">Фитнес-браслеты</label>
+              <label for="slide_hero_3">Квадрокоптеры</label>
+            </div>
+
+            <table>
+              <tr>
+                <th>Без подзарядки</th>
+              </tr>
+              <tr>
+                <td>48 часов</td>
+              </tr>
+            </table>
+
+          </section>
+        </div>
+      </article>
+
+      <article>
+        <input type="radio" id="slide_hero_3" name="slides_hero">
+        <div>
+          <img src="http://via.placeholder.com/526x334" alt="Жалящий квадрокоптер" width="526" height="334">
+          <section>
+            <h3>Порхает как бабочка, жалит как пчела!</h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+
+            <div>
+              <a href="#">Подробнее</a>
+              <label for="slide_hero_1">Селфи-палки</label>
+              <label for="slide_hero_2">Фитнес-браслеты</label>
+              <label for="slide_hero_3">Квадрокоптеры</label>
+            </div>
+
+            <table>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+            </table>
+
+          </section>
+        </div>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>Категории устройств</h2>
+      <ul>
+        <li>
+          <a href="#">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="#">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="#">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="#">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#">Умные часы</a>
+        </li>
+        <li>
+          <a href="#">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Выгодные услуги</h2>
+
+      <section>
+        <div>
+          <a href="#">Подробнее</a>
+          <label for="slide_services_1">Доставка</label>
+          <label for="slide_services_2">Гарантия</label>
+          <label for="slide_services_3">Кредит</label>
+        </div>
+
+        <input type="radio" id="slide_services_1" name="slides_services" checked>
+
+        <div>
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <a href="#">Подробнее</a>
+          <label for="slide_services_1">Доставка</label>
+          <label for="slide_services_2">Гарантия</label>
+          <label for="slide_services_3">Кредит</label>
+        </div>
+
+        <input type="radio" id="slide_services_2" name="slides_services">
+
+        <div>
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <a href="#">Подробнее</a>
+          <label for="slide_services_1">Доставка</label>
+          <label for="slide_services_2">Гарантия</label>
+          <label for="slide_services_3">Кредит</label>
+        </div>
+
+        <input type="radio" id="slide_services_3" name="slides_services">
+
+        <div>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <h2>Партнеры</h2>
+      <ul>
+        <li>
+          <a href="#"><img src="http://via.placeholder.com/260x100" alt="DJI" width="260" height="100"></a>
+        </li>
+        <li>
+          <a href="#"><img src="http://via.placeholder.com/260x100" alt="SP Gadgets" width="260" height="100"></a>
+        </li>
+        <li>
+          <a href="#"><img src="http://via.placeholder.com/260x100" alt="GoPro" width="260" height="100"></a>
+        </li>
+        <li>
+          <a href="#"><img src="http://via.placeholder.com/260x100" alt="Vive" width="260" height="100"></a>
+        </li>
+      </ul>
+    </section>
+
+    <div>
+      <section>
+        <h3>О нас</h3>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+        <ul>
+          <li>
+            <a href="#">Деловые Линии</a>
+          </li>
+          <li>
+            <a href="#">Автотрейдинг</a>
+          </li>
+          <li>
+            <a href="#">ЖелДорЭкспедиция</a>
+          </li>
+        </ul>
+
+        <a href="#">Подробнее о нас</a>
+      </section>
+
+      <section>
+        <h3>Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <iframe src="map">
+        </iframe>
+
+        <a href="#">Напишите нам</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#">Device</a>
+      <span>г. Москва, ул. Строителей, 15</span>
+    </div>
+
+    <section>
+      <ul>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#">Твиттер</a></li>
+      </ul>
+    </section>
+
+    <div>
+      <ul>
+        <li>
+          <a href="#">Войти</a>
+          <a href="#">Выйти</a>
+        </li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+
+      <span>Тел.: <a href="tel:84956660266"> +7 (495) 495-95-95</a>
+    </span>
+
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </div>
+  </footer>
+
+  <form action="post">
+    <input type="checkbox" id="mail_on-off">
+    <label for="mail_on-off">Скрыть</label>
+    <fieldset>
+      <label for="username">Ваше имя:</label>
+      <input type="text" name="username" id="username" placeholder="Представьтесь, пожалуйста" required>
+      <label for="user_email">Ваш e-mail:</label>
+      <input type="email" name="user_email" id="user_email" placeholder="Для отправки ответа" required>
+      <label for="user_mailtext">Текст письма:</label>
+      <textarea name="user_mailtext" id="user_mailtext" cols="30" rows="10" placeholder="В свободной форме" required>
+      </textarea>
+    </fieldset>
+  </form>
+
+  <div>
+    <input type="checkbox" id="map_on-off">
+    <label for="map_on-off">Скрыть</label>
+    <iframe src="map">
+    </iframe>
+  </div>
+
+</body>
+
 </html>
