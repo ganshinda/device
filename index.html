@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
 </head>
 
-<body>
+<body class="page">
   <header class="main-header">
     <a class="main-logo">
       <h1>Device</h1>
@@ -19,8 +19,8 @@
         </li>
 
         <li class="main-header__user-item main-header__user-item--login">
-          <a class="icon-link main-header__link" href="#">Войти</a>
-          <span class="main-header__username">Валентин Петухов 
+          <a class="icon-link main-header__link user-is-logged" href="#">Войти</a>
+          <span class="main-header__username user-is-logged-out">Валентин Петухов 
           <a class="main-header__link" href="#">Выйти</a></span>
         </li>
 
@@ -156,53 +156,17 @@
     <section class="device-types">
       <h2>Категории устройств</h2>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Виртуальная реальность</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Виртуальная реальность</a>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Моноподы для селфи</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Моноподы для селфи</a>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Экшн-камеры</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Экшн-камеры</a>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Фитнес-браслеты</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Фитнес-браслеты</a>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Умные часы</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Умные часы</a>
 
-      <a href="#" class="device-types__link">
-        <div class="device-types__category">
-          <div class="device-types__image">
-          </div>
-          <b>Квадрокоптеры</b>
-        </div>
-      </a>
+      <a href="#" class="device-types__link">Квадрокоптеры</a>
     </section>
 
     <section class="advantages slider">
@@ -303,8 +267,8 @@
 
       <ul class="main-footer__user-list">
         <li class="main-footer__user-item">
-          <a class="icon-link main-footer__link" href="#">Войти</a>
-          <a class="icon-link main-footer__link" href="#">Выйти</a>
+          <a class="icon-link main-footer__link user-is-logged" href="#">Войти</a>
+          <a class="icon-link main-footer__link  user-is-logged-out" href="#">Выйти</a>
         </li>
 
         <li class="main-footer__user-item">
@@ -319,6 +283,7 @@
 
     <section class="main-footer__main-menu">
       <p class="footer__text">г. Москва, ул. Строителей, 15</p>
+
       <ul class="main-footer__delivery-contacts">
         <li class="main-footer__delivery-contacts-item">
           <a href="#">Доставка</a>
@@ -333,9 +298,9 @@
         </li>
       </ul>
 
-      <span class="footer__text">Тел.:
-      <a href="tel:+74956660266">+7 (495) 495-95-95</a>
-      </span>
+      <p class="footer__text">Тел.:
+        <a href="tel:+74956660266">+7 (495) 495-95-95</a>
+      </p>
     </section>
 
     <section class="socials">
@@ -379,17 +344,12 @@
       </div>
     </fieldset>
 
-    <input type="checkbox" id="mail_on-off">
-    <label for="mail_on-off">Закрыть</label>
+    <button type="button" class="close">Скрыть</button>
   </form>
 
-  <!-- ↕↕↕ Удалю когда/если будем реализовывать их через js. Пока пусть полежат  -->
-
   <div>
-    <input type="checkbox" id="map_on-off">
-    <label for="map_on-off">Скрыть</label>
-    <iframe src="map">
-    </iframe>
+    <button type="button" class="close">Скрыть</button>
+    <iframe src="map"></iframe>
   </div>
 </body>
 

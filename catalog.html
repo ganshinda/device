@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
 </head>
 
-<body>
+<body class="page">
   <header class="main-header">
     <a href="index.html" class="main-logo">
       <h1>Device</h1>
@@ -19,8 +19,8 @@
         </li>
 
         <li class="main-header__user-item main-header__user-item--login">
-          <a class="icon-link main-header__link" href="#">Войти</a>
-          <span class="main-header__username">Валентин Петухов 
+          <a class="icon-link main-header__link user-is-logged" href="#">Войти</a>
+          <span class="main-header__username user-is-logged-out">Валентин Петухов 
           <a class="main-header__link" href="#">Выйти</a></span>
         </li>
 
@@ -223,17 +223,9 @@
             <a href="#">Назад</a>
           </li>
 
-          <li>
-            <a href="#">1</a>
-          </li>
-
-          <li>
-            <a href="#">2</a>
-          </li>
-
-          <li>
-            <a href="#">3</a>
-          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
 
           <li>
             <a href="#">Вперед</a>
@@ -251,8 +243,8 @@
 
       <ul class="main-footer__user-list">
         <li class="main-footer__user-item">
-          <a class="icon-link main-footer__link" href="#">Войти</a>
-          <a class="icon-link main-footer__link" href="#">Выйти</a>
+          <a class="icon-link main-footer__link user-is-logged" href="#">Войти</a>
+          <a class="icon-link main-footer__link  user-is-logged-out" href="#">Выйти</a>
         </li>
 
         <li class="main-footer__user-item">
@@ -281,9 +273,9 @@
         </li>
       </ul>
 
-      <span class="footer__text">Тел.:
-      <a href="tel:+74956660266">+7 (495) 495-95-95</a>
-      </span>
+      <p class="footer__text">Тел.:
+        <a href="tel:+74956660266">+7 (495) 495-95-95</a>
+      </p>
     </section>
 
     <section class="socials">
