@@ -8,77 +8,72 @@
 
 <body>
   <header class="main-header">
-    <a href="index.html">
-      <h1 class="main-logo">Device</h1>
+    <a href="index.html" class="main-logo">
+      <h1>Device</h1>
     </a>
 
     <nav class="main-header__nav">
       <ul class="main-header__user-list">
-        <li>
-          <input type="search" placeholder="Поиск по сайту" id="search_item" name="search">
+        <li class="main-header__user-item">
+          <input type="search" placeholder="Поиск по сайту" id="search_item" name="search" class="search-input">
         </li>
 
-        <li class="main-header__login">
-          <a class="main-header__link" href="#">Войти</a>
-          <span>Валентин Петухов 
+        <li class="main-header__user-item main-header__user-item--login">
+          <a class="icon-link main-header__link" href="#">Войти</a>
+          <span class="main-header__username">Валентин Петухов 
           <a class="main-header__link" href="#">Выйти</a></span>
         </li>
 
-        <li>
-          <a class="main-header__link" href="#">Сравнить</a>
+        <li class="main-header__user-item">
+          <a class="icon-link main-header__link" href="#">Сравнить</a>
         </li>
 
-        <li>
-          <a class="main-header__link" href="#">Корзина</a>
+        <li class="main-header__user-item">
+          <a class="icon-link main-header__link" href="#">Корзина</a>
         </li>
       </ul>
 
-      <section class="main-header__main-list">
-        <div class="catalog">
+      <ul class="main-header__main-list">
+        <li class="main-header__main-item">Каталог товаров</li>
 
-          <ul class="main-header__main-item">
-            <li>Каталог товаров</li>
-          </ul>
-
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <a href="#">Виртуальная реальность</a>
-            </li>
-
-            <li class="catalog-item">
-              <a href="#">Моноподы для селфи</a>
-            </li>
-
-            <li class="catalog-item">
-              <a href="#">Экшн-камеры</a>
-            </li>
-
-            <li class="catalog-item">
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-
-            <li class="catalog-item">
-              <a href="#">Умные часы</a>
-            </li>
-
-            <li class="catalog-item">
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="main-header__main-item">
-          <li>
-            <a href="#">Доставка</a>
+        <ul class="catalog-list">
+          <li class="catalog-list__item">
+            <a href="#">Виртуальная реальность</a>
           </li>
-          <li>
-            <a href="#">Гарантия</a>
+
+          <li class="catalog-list__item">
+            <a href="#">Моноподы для селфи</a>
           </li>
-          <li>
-            <a href="#">Контакты</a>
+
+          <li class="catalog-list__item">
+            <a href="#">Экшн-камеры</a>
+          </li>
+
+          <li class="catalog-list__item">
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+
+          <li class="catalog-list__item">
+            <a href="#">Умные часы</a>
+          </li>
+
+          <li class="catalog-list__item">
+            <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
-      </section>
+
+        <li class="main-header__main-item">
+          <a href="#">Доставка</a>
+        </li>
+
+        <li class="main-header__main-item">
+          <a href="#">Гарантия</a>
+        </li>
+
+        <li class="main-header__main-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -101,10 +96,9 @@
       <form action="#" method="get" class="filter__form">
         <fieldset class="filter__field">
           <legend class="filter__legend">Стоимость</legend>
-
           <input type="range" min="0" max="9000" step="1" name="cost" id="cost" class="filter__range">
-
         </fieldset>
+
         <fieldset class="filter__field">
           <legend class="filter__legend">Цвет</legend>
 
@@ -127,14 +121,14 @@
         <fieldset class="filter__field">
           <legend class="filter__legend">Bluetooth</legend>
 
-          <input type="radio" name="bluetooth" value="1" id="1">
-          <label for="1">Есть</label>
+          <input type="radio" name="bluetooth" value="1" id="with-tooth">
+          <label for="with-ttoth">Есть</label>
 
-          <input type="radio" name="bluetooth" value="0" id="0">
-          <label for="0">Нет</label>
+          <input type="radio" name="bluetooth" value="0" id="without-tooth">
+          <label for="without-tooth">Нет</label>
 
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="stroked-button">Показать</button>
       </form>
     </section>
 
@@ -143,15 +137,15 @@
         <h2>Сортировка</h2>
         <ul class="shop__sort-list">
           <li class="shop__sort-item">
-            <button type="button">По цене</button>
+            <a href="#">По цене</a>
           </li>
 
           <li class="shop__sort-item">
-            <button type="button">По типу</button>
+            <a href="#">По типу</a>
           </li>
 
           <li class="shop__sort-item">
-            <button type="button">По популярности</button>
+            <a href="#">По популярности</a>
           </li>
 
           <li class="shop__sort-item">
@@ -169,7 +163,7 @@
 
           <div class="product-card__inner">
             <img src="http://via.placeholder.com/360x380" alt="Любительская селфи-палка" width="360" height="380">
-            <button type="button">В корзину</button>
+            <button type="button" class="stroked-button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
 
@@ -183,7 +177,7 @@
 
           <div class="product-card__inner">
             <img src="http://via.placeholder.com/360x380" alt="Профессиональная селфи-палка">
-            <button type="button">В корзину</button>
+            <button type="button" class="stroked-button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
 
@@ -197,7 +191,7 @@
 
           <div class="product-card__inner">
             <img src="http://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка">
-            <button type="button">В корзину</button>
+            <button type="button" class="stroked-button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
 
@@ -211,7 +205,7 @@
 
           <div class="product-card__inner">
             <img src="http://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»">
-            <button type="button">В корзину</button>
+            <button type="button" class="stroked-button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </div>
 
@@ -244,38 +238,34 @@
             <a href="#">Вперед</a>
           </li>
         </ul>
-
       </div>
-
     </section>
-
   </main>
 
   <footer class="main-footer">
-    <section class="footer__nav">
-
-      <a href="index.html">
+    <section class="main-footer__nav">
+      <a class="main-logo">
         <h1 class="main-logo">Device</h1>
       </a>
 
       <ul class="main-footer__user-list">
         <li class="main-footer__user-item">
-          <a href="#">Войти</a>
-          <a href="#">Выйти</a>
+          <a class="icon-link main-footer__link" href="#">Войти</a>
+          <a class="icon-link main-footer__link" href="#">Выйти</a>
         </li>
 
         <li class="main-footer__user-item">
-          <a href="#">Сравнить</a>
+          <a class="icon-link main-footer__link" href="#">Сравнить</a>
         </li>
 
         <li class="main-footer__user-item">
-          <a href="#">Корзина</a>
+          <a class="icon-link main-footer__link" href="#">Корзина</a>
         </li>
       </ul>
     </section>
 
     <section class="main-footer__main-menu">
-      <span>г. Москва, ул. Строителей, 15</span>
+      <p class="footer__text">г. Москва, ул. Строителей, 15</p>
       <ul class="main-footer__delivery-contacts">
         <li class="main-footer__delivery-contacts-item">
           <a href="#">Доставка</a>
@@ -290,7 +280,7 @@
         </li>
       </ul>
 
-      <span>Тел.: 
+      <span class="footer__text">Тел.:
       <a href="tel:+74956660266">+7 (495) 495-95-95</a>
       </span>
     </section>
