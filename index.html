@@ -79,28 +79,28 @@
   </header>
 
   <main>
-    <section class="features">
+    <section class="heroes slider">
       <h2>Избранные товары</h2>
 
-      <article class="hero-slider">
+      <article class="hero slider__slide slider__slide--active">
         <img src="http://via.placeholder.com/384x486" alt="Длиннющая селфи-палка" width="384" height="486">
-        <section class="hero-slider__description">
-          <h3 class="hero-slider__heading">Делай селфи как Бен Стиллер!</h3>
+        <section class="hero__description">
+          <h3 class="hero__heading">Делай селфи как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
-          <dl class="hero-slider__facts">
-            <div class="hero-slider__facts-col">
+          <dl class="hero__facts">
+            <div class="hero__facts-col">
               <dt>Длина палки</dt>
               <dd>8,5 м</dd>
             </div>
 
-            <div class="hero-slider__facts-col">
+            <div class="hero__facts-col">
               <dt>Вес палки</dt>
               <dd>5 кг</dd>
             </div>
 
-            <div class="hero-slider__facts-col">
+            <div class="hero__facts-col">
               <dt>Материал</dt>
               <dd>Карбон</dd>
             </div>
@@ -108,15 +108,15 @@
         </section>
       </article>
 
-      <article class="hero-slider">
+      <article class="hero slider__slide">
         <img src="http://via.placeholder.com/345x485" alt="Анорексобраслет" width="345" height="485">
-        <section class="hero-slider__description">
-          <h3 class="hero-slider__heading">Худеем правильно!</h3>
+        <section class="hero__description">
+          <h3 class="hero__heading">Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
-          <dl class="hero-slider__facts">
-            <div class="hero-slider__facts-col">
+          <dl class="hero__facts">
+            <div class="hero__facts-col">
               <dt>Без подзарядки</dt>
               <dd>48 часов</dd>
             </div>
@@ -124,26 +124,33 @@
         </section>
       </article>
 
-      <article class="hero-slider">
+      <article class="hero slider__slide">
         <img src="http://via.placeholder.com/526x334" alt="Жалящий квадрокоптер" width="526" height="334">
-        <section class="hero-slider__description">
-          <h3 class="hero-slider__heading">Порхает как бабочка, жалит как пчела!</h3>
+        <section class="hero__description">
+          <h3 class="hero__heading">Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
-          <dl class="hero-slider__facts">
-            <div class="hero-slider__facts-col">
+          <dl class="hero__facts">
+            <div class="hero__facts-col">
               <dt>Дальность полета</dt>
               <dd>800 м</dd>
             </div>
 
-            <div class="hero-slider__facts-col">
+            <div class="hero__facts-col">
               <dt>Радиус поражения</dt>
               <dd>50 м</dd>
             </div>
           </dl>
         </section>
       </article>
+
+      <div class="slider__buttons">
+        <button type="button" class="active">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+      </div>
+
     </section>
 
     <section class="device-types">
@@ -198,26 +205,26 @@
       </a>
     </section>
 
-    <section class="advantages">
+    <section class="advantages slider">
       <h2>У нас выгодно!</h2>
 
-      <div class="slider-operator">
-        <button type="button" class="stroked-button">Доставка</button>
+      <div class="slider__buttons">
+        <button type="button" class="stroked-button stroked-button--active">Доставка</button>
         <button type="button" class="stroked-button">Гарантия</button>
         <button type="button" class="stroked-button">Кредит</button>
       </div>
 
-      <section class="advantages__bullcrap">
+      <section class="advantages__bullcrap slider__slide slider__slide--active">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
 
-      <section class="advantages__bullcrap">
+      <section class="advantages__bullcrap slider__slide">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
       </section>
 
-      <section class="advantages__bullcrap">
+      <section class="advantages__bullcrap slider__slide">
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </section>
