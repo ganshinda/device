@@ -6,19 +6,15 @@ body {
   color: #464646;
 }
 
-.secondary-heading,
-.gilroy {
+.main-heading {
   font-family: "Gilroy", "Helvetica", sans-serif;
+  font-size: 47px;
   font-weight: 900;
+  line-height: 56px;
   color: #000;
 }
 
-.main-logo__heading {
+.main-heading--logo {
   font-size: 48px;
-  line-height: 0;
-}
-
-.secondary-heading {
-  font-size: 47px;
-  line-height: 56px;
+  line-height: 57px;
 }
