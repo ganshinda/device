@@ -9,98 +9,103 @@
 </head>
 
 <body class="page">
-  <header class="main-header container">
-    <nav class="main-header__nav catalog-relative">
-      <h1 class="main-heading main-heading--logo">
-        <a>Device</a>
-      </h1>
+  <div class="container">
+    <header class="main-header">
+      <a class="main-logo">
+        <h1 class="main-title main-title--logo">Device</h1>
+      </a>
 
-      <div class="head-foot-rows">
-        <form class="head-foot-rows__long-row search-bar">
-          <input type="search" placeholder="Поиск по сайту" id="search_item" name="search" class="for-icon">
-          <input type="submit" value="Найти">
-        </form>
+      <nav class="main-header__nav">
 
-        <ul class="head-foot-rows__long-row main-header__user-list">
-          <li class="main-header__user-item main-header__user-item--login">
-            <a class="for-icon main-header__link user-is-logged-in" href="#">Войти</a>
-            <span class="main-header__username user-is-logged-out">Валентин Петухов
+        <div class="main-header__row">
+          <form class="search main-header__column">
+            <input type="search" placeholder="Поиск по сайту" id="search_item" name="search" class="search__input">
+            <button class="search__button">Найти</button>
+          </form>
+
+          <ul class="main-header__user-list main-header__column">
+            <li class="main-header__user-item main-header__user-item--login">
+              <a class="icon-link main-header__link user-is-logged-in" href="#">Войти</a>
+              <span class="main-header__username user-is-logged-out">Валентин Петухов
             <a class="main-header__link" href="#">Выйти</a>
           </span>
-          </li>
+            </li>
 
-          <li class="main-header__user-item">
-            <a class="for-icon main-header__link" href="#">Сравнить</a>
-          </li>
+            <li class="main-header__user-item">
+              <a class="icon-link main-header__link" href="#">Сравнить</a>
+            </li>
 
-          <li class="main-header__user-item">
-            <a class="for-icon main-header__link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
+            <li class="main-header__user-item">
+              <a class="icon-link main-header__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="head-foot-rows">
-        <section class="catalog">
-          <h2 class="catalog__heading">Каталог товаров</h2>
+        <section class="main-header__row main-header__row--relative">
+          <ul class="main-header__main-list main-header__column">
+            <li class="main-header__main-item">
+              <a class="catalog-opener">Каталог товаров</a>
 
-          <div class="catalog__inner">
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a href="catalog.html">Виртуальная реальность</a>
-              </li>
+              <div class="catalog-list hidden">
+                <ul class="catalog-list__category">
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Виртуальная реальность</a>
+                  </li>
 
-              <li class="catalog__item">
-                <a href="catalog.html">Моноподы для селфи</a>
-              </li>
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Моноподы для селфи</a>
+                  </li>
 
-              <li class="catalog__item">
-                <a href="catalog.html">Экшн-камеры</a>
-              </li>
-            </ul>
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Экшн-камеры</a>
+                  </li>
+                </ul>
 
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a href="catalog.html">Фитнес-браслеты</a>
-              </li>
+                <ul class="catalog-list__category">
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Фитнес-браслеты</a>
+                  </li>
 
-              <li class="catalog__item">
-                <a href="catalog.html">Умные часы</a>
-              </li>
-            </ul>
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Умные часы</a>
+                  </li>
+                </ul>
 
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a href="catalog.html">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
+                <ul class="catalog-list__category">
+                  <li class="catalog-list__item">
+                    <a href="catalog.html">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="main-header__main-list main-header__column">
+            <li class="main-header__main-item">
+              <a href="#">Доставка</a>
+            </li>
+
+            <li class="main-header__main-item">
+              <a href="#">Гарантия</a>
+            </li>
+
+            <li class="main-header__main-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
         </section>
-
-        <ul class="head-foot-rows__long-row main-header__main-list">
-          <li class="main-header__main-item">
-            <a href="#">Доставка</a>
-          </li>
-
-          <li class="main-header__main-item">
-            <a href="#">Гарантия</a>
-          </li>
-
-          <li class="main-header__main-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
+  </div>
 
   <main>
-    <section class="heroes slider container">
+    <section class="heroes slider">
       <h2 class="visually-hidden">Избранные товары</h2>
 
       <article class="hero slider__slide slider__slide--active">
         <img src="img/content/slider-1.png" alt="Длиннющая селфи-палка" width="384" height="486">
         <section class="hero__description">
-          <h3 class="main-heading">Делай селфи как Бен Стиллер!</h3>
+          <h3 class="main-title">Делай селфи как Бен Стиллер!</h3>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
@@ -126,7 +131,7 @@
       <article class="hero slider__slide">
         <img src="img/content/slider-2.png" alt="Анорексобраслет" width="345" height="485">
         <section class="hero__description">
-          <h3 class="main-heading">Худеем правильно!</h3>
+          <h3 class="main-title">Худеем правильно!</h3>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
@@ -142,7 +147,7 @@
       <article class="hero slider__slide">
         <img src="img/content/slider-3.png" alt="Жалящий квадрокоптер" width="526" height="334">
         <section class="hero__description">
-          <h3 class="main-heading">Порхает как бабочка, жалит как пчела!</h3>
+          <h3 class="main-title">Порхает как бабочка, жалит как пчела!</h3>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="#" class="stroked-button">Подробнее</a>
 
@@ -165,6 +170,7 @@
         <button type="button">2</button>
         <button type="button">3</button>
       </div>
+
     </section>
 
     <section class="device-types">
@@ -187,17 +193,17 @@
       </div>
 
       <section class="advantages__bullcrap slider__slide slider__slide--active">
-        <h3 class="main-heading">Доставка</h3>
+        <h3 class="main-title">Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
 
       <section class="advantages__bullcrap slider__slide">
-        <h3 class="main-heading">Гарантия</h3>
+        <h3 class="main-title">Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
       </section>
 
       <section class="advantages__bullcrap slider__slide">
-        <h3 class="main-heading">Кредит</h3>
+        <h3 class="main-title">Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </section>
     </section>
@@ -233,7 +239,7 @@
 
     <div class="about-us-nearend">
       <section class="delivery">
-        <h3 class="main-heading">О нас</h3>
+        <h3 class="main-title">О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
         <ul class="delivery__list">
@@ -253,7 +259,7 @@
       </section>
 
       <section class="contacts">
-        <h3 class="main-heading">Контакты</h3>
+        <h3 class="main-title">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
         <div class="map">
@@ -268,28 +274,28 @@
   </main>
 
   <footer class="main-footer">
-    <section class="head-foot-rows main-footer__nav">
+    <section class="main-footer__nav">
       <a class="main-logo">
-        <h1 class="main-heading main-heading--logo main-heading--orange">Device</h1>
+        <h1 class="main-title main-title--logo main-title-orange">Device</h1>
       </a>
 
       <ul class="main-footer__user-list">
         <li class="main-footer__user-item">
-          <a class="for-icon main-footer__link user-is-logged-in" href="#">Войти</a>
-          <a class="for-icon main-footer__link  user-is-logged-out" href="#">Выйти</a>
+          <a class="icon-link main-footer__link user-is-logged" href="#">Войти</a>
+          <a class="icon-link main-footer__link  user-is-logged-out" href="#">Выйти</a>
         </li>
 
         <li class="main-footer__user-item">
-          <a class="for-icon main-footer__link" href="#">Сравнить</a>
+          <a class="icon-link main-footer__link" href="#">Сравнить</a>
         </li>
 
         <li class="main-footer__user-item">
-          <a class="for-icon main-footer__link" href="#">Корзина</a>
+          <a class="icon-link main-footer__link" href="#">Корзина</a>
         </li>
       </ul>
     </section>
 
-    <section class="head-foot-rows main-footer__main-menu">
+    <section class="main-footer__main-menu">
       <p class="main-footer__text">г. Москва, ул. Строителей, 15</p>
 
       <ul class="main-footer__delivery-contacts">
@@ -311,7 +317,7 @@
       </p>
     </section>
 
-    <section class="head-foot-rows socials">
+    <section class="socials">
       <ul class="socials-list">
         <li class="socials-item">
           <a href="#">Фейсбук</a>
@@ -356,8 +362,10 @@
 
   <div class="map-big">
     <iframe class="map-big"></iframe>
-    <button type="button" class="close">Скрыть</button>
   </div>
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
