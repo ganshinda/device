@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="page">
+<body class="page page--logged">
 
   <div class="container">
     <header class="main-header">
@@ -25,7 +25,7 @@
 
           <ul class="main-header__user-list main-header__column">
             <li class="main-header__user-item main-header__user-item--login">
-              <a class="icon-link main-header__link user-is-logged-in" href="#">
+              <a class="icon-link main-header__link user-is-logged-out" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
                   <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5A3.5 3.5 0 0 0 6.5 0a3.5 3.5 0 0 0-1.8 6.5A6.2 6.2 0 0 0 0 12z"
                     transform="translate(1,4)">
@@ -33,7 +33,13 @@
                 </svg>
                 Войти
               </a>
-              <span class="main-header__username user-is-logged-out">Валентин Петухов
+              <span class="user-is-logged-in main-header__user-login"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="16"
+                viewBox="0 0 22 16">
+                  <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5A3.5 3.5 0 0 0 6.5 0a3.5 3.5 0 0 0-1.8 6.5A6.2 6.2 0 0 0 0 12z"
+                    transform="translate(1,4)">
+                  </path>
+                </svg>
+                Валентин Петухов
                 <a href="#">Выйти</a>
               </span>
             </li>
@@ -65,7 +71,7 @@
         <section class="main-header__row main-header__row--relative">
           <ul class="main-header__main-list main-header__column">
             <li class="main-header__main-item">
-              <a class="catalog-opener">Каталог товаров</a>
+              <a class="catalog-opener" tabindex="0">Каталог товаров</a>
 
               <div class="catalog-list hidden">
                 <ul class="catalog-list__category">
@@ -303,7 +309,7 @@
 
         <ul class="main-footer__user-list main-footer__column main-footer__column--short">
           <li class="main-footer__user-item">
-            <a class="icon-link user-is-logged" href="#">
+            <a class="icon-link user-is-logged-out" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
                 <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5A3.5 3.5 0 0 0 6.5 0a3.5 3.5 0 0 0-1.8 6.5A6.2 6.2 0 0 0 0 12z"
                   transform="translate(1,4)" fill="#ffc600">
@@ -311,7 +317,14 @@
               </svg>
               Войти
             </a>
-            <a class="icon-link  user-is-logged-out" href="#">Выйти</a>
+            <a class="icon-link  user-is-logged-in" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
+                <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5A3.5 3.5 0 0 0 6.5 0a3.5 3.5 0 0 0-1.8 6.5A6.2 6.2 0 0 0 0 12z"
+                  transform="translate(1,4)" fill="#ffc600">
+                </path>
+              </svg>
+              Выйти
+            </a>
           </li>
 
           <li class="main-footer__user-item">
