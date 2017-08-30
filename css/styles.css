@@ -99,6 +99,7 @@
 .search__input {
   flex-grow: 1;
   padding: 8px 20px 8px 35px;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
   border: 2px solid transparent;
   border-width: 2px 0;
