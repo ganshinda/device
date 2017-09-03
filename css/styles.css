@@ -489,6 +489,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 1160px;
 }
 
 .main-footer__column {
@@ -567,11 +568,15 @@
 }
 
 .main-footer__main-item:not(:first-of-type) {
-  margin-left: 37px;
+  margin-left: 20px;
 }
 
 .main-footer__main-menu {
   margin-bottom: 33px;
+}
+
+.main-footer__main-list {
+  justify-content: space-around;
 }
 
 .main-footer__main-item a {
@@ -651,7 +656,7 @@
 }
 
 .academy-logo a {
-  width: 27px;
+  width: 31px;
   height: 35px;
   opacity: 1;
   -webkit-transition: opacity 150ms;
@@ -899,6 +904,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 200px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -926,6 +932,7 @@
 
 .filter__range {
   position: relative;
+  width: 200px;
   height: 2px;
   margin-top: 16px;
   margin-bottom: 29px;
@@ -983,6 +990,8 @@
 
 .filter__label {
   position: relative;
+  display: block;
+  width: 160px;
   margin-bottom: 5px;
   padding: 6px 0;
   padding-left: 40px;
@@ -1048,6 +1057,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 760px;
   padding-left: 71px;
   background: #fff;
 }
@@ -1182,9 +1192,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  width: 760px;
   margin-top: -11px;
   margin-bottom: 73px;
   background-color: #ebebeb;
@@ -1197,8 +1205,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1209,6 +1215,14 @@
 
 .paginator__item {
   list-style-type: none;
+}
+
+.paginator__item--outer:first-of-type {
+  margin-right: auto;
+}
+
+.paginator__item--outer:last-of-type {
+  margin-left: auto;
 }
 
 .paginator__item a {
