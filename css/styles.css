@@ -129,7 +129,7 @@
 
 .search__input {
   flex-grow: 1;
-  padding: 0 35px 8px 35px;
+  padding: 0 20px 8px 35px;
   font-family: inherit;
   line-height: 30px;
   border: 2px solid transparent;
@@ -770,6 +770,10 @@
   margin-bottom: 30px;
 }
 
+.filter__field--bottom {
+  margin-bottom: 24px;
+}
+
 .filter__legend {
   width: 100%;
   margin-bottom: 14px;
@@ -891,10 +895,6 @@
   opacity: 0;
 }
 
-.btn--filter {
-  margin-top: -10px;
-}
-
 .shop {
   display: flex;
   flex-direction: column;
@@ -1003,17 +1003,21 @@
 }
 
 .paginator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: -11px;
   margin-bottom: 73px;
   background-color: #ebebeb;
 }
 
 .paginator__list {
+  width: 440px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -1021,16 +1025,8 @@
   list-style-type: none;
 }
 
-.paginator__item--first {
-  margin-left: auto;
-}
-
-.paginator__item--last {
-  margin-right: auto;
-}
-
 .paginator__item a {
-  padding: 20px 14px;
+  padding: 25px 14px;
   font-family: "Gilroy", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: 900;

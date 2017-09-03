@@ -217,7 +217,7 @@
               <label for="cb-pink" class="filter__label filter__label--checkbox">Розовый</label>
             </fieldset>
 
-            <fieldset class="filter__field">
+            <fieldset class="filter__field filter__field--bottom">
               <legend class="filter__legend">Bluetooth</legend>
 
               <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
@@ -227,7 +227,7 @@
               <label for="bluetooth-0" class="filter__label filter__label--radio">Нет</label>
             </fieldset>
 
-            <button type="submit" class="btn btn--filter">Показать</button>
+            <button type="submit" class="btn">Показать</button>
           </form>
         </section>
 
@@ -307,12 +307,12 @@
           </section>
 
           <section class="paginator">
-            <ul class="paginator__list">
-              <li class="paginator__item paginator__item--outer">
-                <a href="#">Назад</a>
-              </li>
+            <b class="paginator__item paginator__item--outer">
+              <a href="#">Назад</a>
+            </b>
 
-              <li class="paginator__item paginator__item--first">
+            <ul class="paginator__list">
+              <li class="paginator__item">
                 <a href="#">1</a>
               </li>
 
@@ -320,14 +320,14 @@
                 <a href="#">2</a>
               </li>
 
-              <li class="paginator__item paginator__item--last">
+              <li class="paginator__item">
                 <a href="#">3</a>
               </li>
-
-              <li class="paginator__item paginator__item--outer">
-                <a href="#">Вперед</a>
-              </li>
             </ul>
+
+            <b class="paginator__item paginator__item--outer">
+              <a href="#">Вперед</a>
+            </b>
           </section>
         </div>
       </div>
