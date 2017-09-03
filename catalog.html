@@ -201,44 +201,30 @@
             <fieldset class="filter__field filter__field--middle">
               <legend class="filter__legend">Цвет</legend>
 
-              <label class="filter__label">Черный
-                <input type="checkbox" name="color" value="black" class="filter__checkbox">
-                <span class="filter__indicator filter__indicator--checkbox"></span>
-              </label>
+              <input type="checkbox" name="color" value="black" id="cb-black" class="filter__input visually-hidden">
+              <label for="cb-black" class="filter__label filter__label--checkbox">Черный</label>
 
-              <label class="filter__label">Белый
-                <input type="checkbox" name="color" value="white" class="filter__checkbox">
-                <span class="filter__indicator filter__indicator--checkbox"></span>
-              </label>
+              <input type="checkbox" name="color" value="white" id="cb-white" class="filter__input visually-hidden">
+              <label for="cb-white" class="filter__label filter__label--checkbox">Белый</label>
 
-              <label class="filter__label">Синий
-                <input type="checkbox" name="color" value="blue" class="filter__checkbox">
-                <span class="filter__indicator filter__indicator--checkbox"></span>
-              </label>
+              <input type="checkbox" name="color" value="blue" id="cb-blue" class="filter__input visually-hidden">
+              <label for="cb-blue" class="filter__label filter__label--checkbox">Синий</label>
 
-              <label class="filter__label">Красный
-                <input type="checkbox" name="color" value="red" class="filter__checkbox">
-                <span class="filter__indicator filter__indicator--checkbox"></span>
-              </label>
+              <input type="checkbox" name="color" value="red" id="cb-red" class="filter__input visually-hidden">
+              <label for="cb-red" class="filter__label filter__label--checkbox">Красный</label>
 
-              <label class="filter__label">Розовый
-                <input type="checkbox" name="color" value="pink" class="filter__checkbox">
-                <span class="filter__indicator filter__indicator--checkbox"></span>
-              </label>
+              <input type="checkbox" name="color" value="pink" id="cb-pink" class="filter__input visually-hidden">
+              <label for="cb-pink" class="filter__label filter__label--checkbox">Розовый</label>
             </fieldset>
 
             <fieldset class="filter__field">
               <legend class="filter__legend">Bluetooth</legend>
 
-              <label class="filter__label">Есть
-                <input type="radio" name="bluetooth" value="1" class="filter__radio">
-                <span class="filter__indicator filter__indicator--radio"></span>
-              </label>
+              <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
+              <label for="bluetooth-1" class="filter__label filter__label--radio">Есть</label>
 
-              <label class="filter__label">Нет
-                <input type="radio" name="bluetooth" value="0" class="filter__radio">
-                <span class="filter__indicator filter__indicator--radio"></span>
-              </label>
+              <input type="radio" name="bluetooth" value="0" id="bluetooth-0" class="filter__input visually-hidden">
+              <label for="bluetooth-0" class="filter__label filter__label--radio">Нет</label>
             </fieldset>
 
             <button type="submit" class="btn btn--filter">Показать</button>
@@ -322,21 +308,23 @@
 
           <section class="paginator">
             <ul class="paginator__list">
-              <li class="paginator__item paginator__item--back">
+              <li class="paginator__item paginator__item--outer">
                 <a href="#">Назад</a>
               </li>
 
-              <li class="paginator__item">
+              <li class="paginator__item paginator__item--first">
                 <a href="#">1</a>
               </li>
-              <li class="paginator__item">
+
+              <li class="paginator__item paginator__item--active">
                 <a href="#">2</a>
               </li>
-              <li class="paginator__item">
+
+              <li class="paginator__item paginator__item--last">
                 <a href="#">3</a>
               </li>
 
-              <li class="paginator__item paginator__item--forward">
+              <li class="paginator__item paginator__item--outer">
                 <a href="#">Вперед</a>
               </li>
             </ul>
