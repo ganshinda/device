@@ -14,3 +14,5 @@ catalogOpener.addEventListener('keypress', function (press) {
     catalogList.classList.toggle("hidden");
   }
 });
+
+
