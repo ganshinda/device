@@ -289,13 +289,10 @@
 
 .btn:hover::before,
 .btn:focus::before {
-  content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #f1c52e;
   z-index: -1;
 }
 
@@ -907,13 +904,18 @@
   margin-bottom: 21px;
 }
 
-.advantages__btn:active {
+.advantages__btn--active {
   color: #f7e184;
 }
 
-.advantages__btn:active::before {
+.advantages__btn--active::before,
+.advantages__btn--active:focus::before {
   width: 280px;
-  background-color: #000;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  z-index: -1;
 }
 
 .advantages__point {
@@ -997,7 +999,7 @@
 }
 
 .partners__link:hover .partners__image,
-.partners__link:focus .partners__image{
+.partners__link:focus .partners__image {
   opacity: 1;
 }
 
