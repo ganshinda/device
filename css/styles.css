@@ -912,7 +912,7 @@
 }
 
 .advantages__btn:active::before {
-  width: 290px;
+  width: 280px;
   background-color: #000;
 }
 
@@ -996,7 +996,8 @@
   transition: opacity 150ms ease-out;
 }
 
-.partners__link:hover .partners__image {
+.partners__link:hover .partners__image,
+.partners__link:focus .partners__image{
   opacity: 1;
 }
 
