@@ -158,6 +158,8 @@
   background-color: #000;
 }
 
+/*-- Поиск --*/
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +688,8 @@
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%23FFF' d='M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm8 12.8c-.3 6.5-3.5 10.8-11 10.7h-.3-.2c-.5 0-4.6-.4-5.4-1.8 2.5.2 4.3-.4 5.1-1.1-1-.3-2.9-.5-3.2-2.9.4.1.6.2 1.3.1-1.3-.8-2.8-1.5-2.7-3.6.3.3 1.2.5 1.5.4-.8-.2-2.2-3.2-1-4.7 2 1.7 4 3.4 7.8 3.6.2-2.2 1.2-3.7 3.2-4.3 1.8-.5 3.2.2 3.9 1.1l2.2-.7c0 .9-.6 1.5-1 1.7.8.2 1.5-.4 1.5-.4a3 3 0 0 1-1.8 2z'/%3E%3C/svg%3E%0A") no-repeat center;
 }
 
+/*-- Лого Академии --*/
+
 .academy-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,6 +722,154 @@
 
 .academy-logo--footer a {
   margin-left: auto;
+}
+
+/*-- Попап-форма --*/
+
+.popup-form {
+  position: fixed;
+  width: 960px;
+  top: 80px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  box-shadow: -45px 0 45px -40px rgba(0, 0, 0, 0.65), 45px 0 45px -40px rgba(0, 0, 0, 0.65), 0 8px 20px 2px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.popup-form__field {
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 85px 0 75px;
+  border: none;
+}
+
+.popup-form__part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup-form__part--for-mail {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.popup-form__input-container {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-form__input-container--for-textarea {
+  width: 760px;
+  margin-bottom: 40px;
+}
+
+.popup-form__btn-container {
+  width: 200px;
+}
+
+.popup-form__input-container label {
+  margin-bottom: 10px;
+  font-family: "Gilroy", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  letter-spacing: normal;
+}
+
+.popup-form__textarea {
+  height: 155px;
+  width: 100%;
+}
+
+.custom-input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 15px 17px;
+  border: 3px solid transparent;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #464646;
+  background-color: #f2f2f2;
+  transition: background-color 200ms, border 200ms;
+  resize: none;
+}
+
+.custom-input::placeholder {
+  opacity: 0.4;
+}
+
+.custom-input:hover {
+  background-color: #ebebeb;
+}
+
+.custom-input:invalid {
+  background-color: #f6dada;
+}
+
+.custom-input:focus:not(:invalid) {
+  background-color: inherit;
+  border: 3px solid #f7e296;
+  outline: none;
+}
+
+.modal-close-btn {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f7e296;
+  transition: background-color 100ms;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #f0c52e;
+}
+
+.modal-close-btn:active {
+  background-color: #faedc0;
+}
+
+.modal-close-btn::before,
+.modal-close-btn::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 2px;
+  top: 50%;
+  left: 9px;
+  background-color: #fff;
+}
+
+.modal-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.popup-map {
+  position: fixed;
+  width: 960px;
+  height: 565px;
+  left: 50%;
+  bottom: 80px;
+  margin-left: -480px;
+  background: url("../img/content/map-big.jpg") no-repeat center center;
+  box-shadow: 0 12px 18px -4px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 
 /*---------- Стили индекс ----------*/
@@ -1381,6 +1533,7 @@
   0 2px 1px #dadada;
   box-shadow: inset 0 0 0 8px #fff,
   0 2px 1px #dadada;
+  cursor: pointer;
 }
 
 .filter__round-buttons span {
