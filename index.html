@@ -142,7 +142,7 @@
             как Бен Стиллер!
           </h3>
           <p
-            class="main-para hero__para">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5.
+            class="main-para hero__para">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
 
           <div class="hero__button-container">
@@ -173,7 +173,9 @@
           <img src="img/content/slider-2.png" alt="Анорексобраслет" width="345" height="485">
         </div>
         <section class="hero__block hero__block--description">
-          <h3 class="main-title hero__title decoline decoline--white">Худеем правильно!
+          <h3 class="main-title hero__title decoline decoline--white-long">Худеем
+            <br>
+            правильно!
             <br>
           </h3>
           <p class="main-para hero__para">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -197,7 +199,7 @@
           <img src="img/content/slider-3.png" alt="Жалящий квадрокоптер" width="526" height="334">
         </div>
         <section class="hero__block hero__block--description">
-          <h3 class="main-title hero__title decoline decoline--white">Порхает как бабочка,
+          <h3 class="main-title hero__title decoline decoline--white-long">Порхает как бабочка,
             <br>
             жалит как пчела!
           </h3>
@@ -437,10 +439,13 @@
             class="main-para brief-info__para">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
 
-          <div class="map map--brief-info">
+          <div class="brief-info__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
-              frameborder="0" width="100%" height="100%" style="border:0" allowfullscreen></iframe>
+              frameborder="0" width="100%" height="100%" style="border:0"></iframe>
+            <p class="brief-info__overlay">
+              <span class="visually-hidden">Москва, улицв Строителей 15, ближайщий ориентир - "Драматический театр Вернандского."</span>
+            </p>
           </div>
         </section>
       </div>
@@ -454,7 +459,7 @@
 
         <div class="brief-info__buttons-part">
           <div class="brief-info__btn-container">
-            <a href="#" class="btn">Напишите нам</a>
+            <button class="btn btn-toggle-write-us">Напишите нам</button>
           </div>
         </div>
       </div>
@@ -567,17 +572,17 @@
     </div>
   </footer>
 
-  <div class="popup-map">
+  <div class="popup-map hidden">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
       frameborder="0" width="100%" height="100%" style="border:0" allowfullscreen>
     </iframe>
-    <button type="button" class="modal-close-btn">
+    <button type="button" class="modal-close-btn modal-close-btn--map">
       <span class="visually-hidden">Скрыть</span>
     </button>
   </div>
 
-  <form action="post" class="popup-form">
+  <form action="post" class="popup-form hidden">
     <fieldset class="popup-form__field">
       <legend class="visually-hidden">Форма обратной связи</legend>
 
@@ -605,7 +610,7 @@
       </div>
 
     </fieldset>
-    <button type="button" class="modal-close-btn">
+    <button type="button" class="modal-close-btn modal-close-btn--write-us">
       <span class="visually-hidden">Скрыть</span>
     </button>
   </form>

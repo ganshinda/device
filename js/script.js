@@ -35,6 +35,35 @@ logout.forEach(function (b) {
 });
 
 
+//Попап "Напишите нам"//
+
+var openingButtonForm = document.querySelector(".btn-toggle-write-us");
+var closingButtonForm = document.querySelector(".modal-close-btn--write-us");
+var popupForm = document.querySelector(".popup-form");
+
+openingButtonForm.addEventListener("click", function () {
+  popupForm.classList.toggle("hidden");
+});
+
+closingButtonForm.addEventListener("click", function () {
+  popupForm.classList.add("hidden");
+});
+
+
+//Попап карта//
+
+var openingMap = document.querySelector(".brief-info__overlay");
+var closingButtonMap = document.querySelector(".modal-close-btn--map");
+var popupMap = document.querySelector(".popup-map");
+
+openingMap.addEventListener("click", function () {
+  popupMap.classList.toggle("hidden");
+});
+
+closingButtonMap.addEventListener("click", function () {
+  popupMap.classList.add("hidden");
+});
+
 //Слайдер героев//
 
 var heroButtons = Array.prototype.slice.call(document.querySelectorAll(".hero__slider-button"));
