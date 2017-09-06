@@ -886,6 +886,10 @@
   animation: popup-open 500ms ease-out;
 }
 
+.popup-map iframe {
+  border: none;
+}
+
 .modal-close-btn {
   position: absolute;
   width: 55px;
@@ -1364,6 +1368,10 @@
   height: 222px;
   margin-top: 37px;
   background: url("../img/content/map.jpg") no-repeat center center;
+}
+
+.brief-info__map iframe {
+  border: none;
 }
 
 .brief-info__overlay {
