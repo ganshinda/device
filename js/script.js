@@ -1,18 +1,7 @@
+//Открывалка каталога//
+
 var catalogOpener = document.querySelector(".catalog-opener");
 var catalogList = document.querySelector(".catalog-list");
-
-var page = document.querySelector(".page");
-var login = Array.from(document.querySelectorAll(".user-is-logged-out"));
-var logout = Array.from(document.querySelectorAll(".user-is-logged-in"));
-
-
-var heroButtons = Array.from(document.getElementsByClassName("hero__slider-button"));
-var heroes = document.querySelector(".heroes");
-var heroSlides = heroes.getElementsByClassName("slider__slide");
-
-var advantagesButtons = Array.from(document.getElementsByClassName("advantages__btn"));
-var advantages = document.querySelector(".advantages");
-var advantagesSlides = advantages.getElementsByClassName("slider__slide");
 
 catalogOpener.addEventListener("click", function () {
   catalogList.classList.toggle("hidden");
@@ -23,6 +12,13 @@ catalogOpener.addEventListener('keypress', function (press) {
     catalogList.classList.toggle("hidden");
   }
 });
+
+
+//Логин-логаут//
+
+var page = document.querySelector(".page");
+var login = Array.prototype.slice.call(document.querySelectorAll(".user-is-logged-out"));
+var logout = Array.prototype.slice.call(document.querySelectorAll(".user-is-logged-in"));
 
 login.forEach(function (a) {
   a.addEventListener("click", function () {
@@ -39,6 +35,13 @@ logout.forEach(function (b) {
 });
 
 
+//Слайдер героев//
+
+var heroButtons = Array.prototype.slice.call(document.querySelectorAll(".hero__slider-button"));
+var heroes = document.querySelector(".heroes");
+var heroSlides = heroes.querySelectorAll(".slider__slide");
+
+
 heroButtons.forEach(function (button, i) {
   button.addEventListener('click', function () {
 
@@ -51,6 +54,13 @@ heroButtons.forEach(function (button, i) {
     heroSlides[i].classList.add("slider__slide--active");
   });
 });
+
+
+//Слайдер преимуществ//
+
+var advantagesButtons = Array.prototype.slice.call(document.querySelectorAll(".advantages__btn"));
+var advantages = document.querySelector(".advantages");
+var advantagesSlides = advantages.querySelectorAll(".slider__slide");
 
 advantagesButtons.forEach(function (button, i) {
   button.addEventListener('click', function () {
