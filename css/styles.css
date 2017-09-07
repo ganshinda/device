@@ -741,7 +741,7 @@ p.main-footer__phone {
 .popup-form {
   position: fixed;
   width: 960px;
-  top: 250px;
+  top: 160px;
   left: 50%;
   margin-left: -480px;
   background-color: #fff;
@@ -904,7 +904,7 @@ p.main-footer__phone {
   width: 960px;
   height: 565px;
   left: 50%;
-  top: 250px;
+  top: 160px;
   margin-left: -480px;
   background: url("../img/content/map-big.jpg") no-repeat center center;
   -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
