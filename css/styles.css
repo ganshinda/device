@@ -877,6 +877,16 @@ p.main-footer__phone {
   background-color: #f6dada;
 }
 
+.custom-input:disabled {
+  background-color: #464646;
+  color: #464646;
+  opacity: 0.4;
+}
+
+.custom-input:disabled::placeholder {
+  color: #464646;
+}
+
 .custom-input:focus:not(:invalid) {
   background-color: #fff;
   border: 3px solid #f7e296;
@@ -1763,6 +1773,11 @@ p.main-footer__phone {
 
 .filter__input:active + .filter__label--radio::after {
   opacity: 0;
+}
+
+.filter__input:disabled + .filter__label--radio::before,
+.filter__input:disabled + .filter__label--checkbox::before {
+  opacity: 0.2;
 }
 
 .shop {
