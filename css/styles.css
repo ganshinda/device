@@ -227,6 +227,7 @@
 }
 
 .search__button {
+  visibility: hidden;
   padding: 8px 20px;
   font-family: inherit;
   line-height: 30px;
@@ -245,6 +246,7 @@
 .search__input:focus + .search__button,
 .search__button:focus,
 .search__button:active {
+  visibility: visible;
   color: inherit;
   border: 2px solid #000;
 }
