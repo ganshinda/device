@@ -1,4 +1,3 @@
-
 //Логин-логаут//
 
 var page = document.querySelector('.page');
@@ -27,11 +26,11 @@ var closingButtonForm = document.querySelector('.modal-close-btn--write-us');
 var popupForm = document.querySelector('.popup-form');
 
 openingButtonForm.addEventListener('click', function () {
-  popupForm.classList.toggle('hidden');
+  popupForm.classList.toggle('visually-hidden');
 });
 
 closingButtonForm.addEventListener('click', function () {
-  popupForm.classList.add('hidden');
+  popupForm.classList.add('visually-hidden');
 });
 
 
@@ -42,11 +41,11 @@ var closingButtonMap = document.querySelector('.modal-close-btn--map');
 var popupMap = document.querySelector('.popup-map');
 
 openingMap.addEventListener('click', function () {
-  popupMap.classList.toggle('hidden');
+  popupMap.classList.toggle('visually-hidden');
 });
 
 closingButtonMap.addEventListener('click', function () {
-  popupMap.classList.add('hidden');
+  popupMap.classList.add('visually-hidden');
 });
 
 //Слайдер героев//
