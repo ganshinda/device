@@ -26,11 +26,11 @@ var closingButtonForm = document.querySelector('.modal-close-btn--write-us');
 var popupForm = document.querySelector('.popup-form');
 
 openingButtonForm.addEventListener('click', function () {
-  popupForm.classList.toggle('visually-hidden');
+  popupForm.classList.toggle('hidden');
 });
 
 closingButtonForm.addEventListener('click', function () {
-  popupForm.classList.add('visually-hidden');
+  popupForm.classList.add('hidden');
 });
 
 
@@ -41,11 +41,11 @@ var closingButtonMap = document.querySelector('.modal-close-btn--map');
 var popupMap = document.querySelector('.popup-map');
 
 openingMap.addEventListener('click', function () {
-  popupMap.classList.toggle('visually-hidden');
+  popupMap.classList.toggle('hidden');
 });
 
 closingButtonMap.addEventListener('click', function () {
-  popupMap.classList.add('visually-hidden');
+  popupMap.classList.add('hidden');
 });
 
 //Слайдер героев//

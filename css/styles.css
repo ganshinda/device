@@ -201,6 +201,7 @@
   line-height: 30px;
 
   padding: 0 20px 8px 35px;
+  border-radius: 0;
 
   -webkit-transition: border 150ms;
   -o-transition: border 150ms;
@@ -683,6 +684,10 @@
   list-style-type: none;
 }
 
+.main-footer__user-item:first-of-type {
+  margin-right: 5px;
+}
+
 .main-footer__user-item a,
 .main-footer__main-item a {
   -webkit-transition: opacity 200ms;
@@ -1008,6 +1013,7 @@ p.main-footer__phone {
 
   color: #464646;
   border: 3px solid transparent;
+  border-radius: 0;
   background-color: #f2f2f2;
 }
 
@@ -2138,7 +2144,7 @@ p.main-footer__phone {
 }
 
 .product-card__inner {
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .product-card__inner--new {
@@ -2174,6 +2180,7 @@ p.main-footer__phone {
 }
 
 .product-card__image {
+  display: block;
   max-width: 100%;
 
   -webkit-transition: opacity 200ms;
@@ -2183,11 +2190,9 @@ p.main-footer__phone {
   background-color: #eee;
 }
 
-.product-card__inner:hover .product-card__image {
-  opacity: .7;
-}
-
-.product-card__buttons {
+.product-card__links {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 165px;
   left: 50%;
@@ -2207,8 +2212,7 @@ p.main-footer__phone {
   flex-wrap: wrap;
 }
 
-.product-card__buttons button,
-.product-card__buttons a {
+.product-card__links a {
   -webkit-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms;
@@ -2216,31 +2220,43 @@ p.main-footer__phone {
   opacity: 0;
 }
 
+.product-card__inner {
+  background: #eee;
+  background-clip: border-box;
+}
+
+.product-card__inner:hover .product-card__image {
+  opacity: 0.2;
+}
+
 .product-card__inner:hover button,
 .product-card__inner:hover a,
-.product-card__button:hover,
-.product-card__button:focus {
+.product-card__link:hover,
+.product-card__link:focus {
   opacity: 1;
 }
 
-.product-card__inner:hover .product-card__button--add {
+.product-card__inner:hover .product-card__link--add {
   opacity: .5;
 }
 
-.product-card__button.product-card__button--add:hover {
+.product-card__link.product-card__link--add:hover {
   opacity: 1;
 }
 
-.product-card__button.product-card__button--add:active {
+.product-card__link.product-card__link--add:active {
   opacity: .2;
 }
 
-.product-card__button--add {
+.product-card__link--add {
+  display: inline-block;
   font-family: inherit;
   font-size: 13px;
   line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
 
-  cursor: pointer;
   -webkit-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms;
