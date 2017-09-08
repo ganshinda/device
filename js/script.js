@@ -25,14 +25,15 @@ var openingButtonForm = document.querySelector('.btn-toggle-write-us');
 var closingButtonForm = document.querySelector('.modal-close-btn--write-us');
 var popupForm = document.querySelector('.popup-form');
 
-openingButtonForm.addEventListener('click', function () {
-  popupForm.classList.toggle('hidden');
-});
+if (popupForm) {
+  openingButtonForm.addEventListener('click', function () {
+    popupForm.classList.toggle('hidden');
+  });
 
-closingButtonForm.addEventListener('click', function () {
-  popupForm.classList.add('hidden');
-});
-
+  closingButtonForm.addEventListener('click', function () {
+    popupForm.classList.add('hidden');
+  });
+}
 
 //Попап карта//
 
@@ -40,50 +41,57 @@ var openingMap = document.querySelector('.brief-info__overlay');
 var closingButtonMap = document.querySelector('.modal-close-btn--map');
 var popupMap = document.querySelector('.popup-map');
 
-openingMap.addEventListener('click', function () {
-  popupMap.classList.toggle('hidden');
-});
+if (popupMap) {
+  openingMap.addEventListener('click', function () {
+    popupMap.classList.toggle('hidden');
+  });
 
-closingButtonMap.addEventListener('click', function () {
-  popupMap.classList.add('hidden');
-});
+  closingButtonMap.addEventListener('click', function () {
+    popupMap.classList.add('hidden');
+  });
+}
 
 //Слайдер героев//
 
 var heroButtons = Array.prototype.slice.call(document.querySelectorAll('.hero__slider-button'));
 var heroes = document.querySelector('.heroes');
-var heroSlides = heroes.querySelectorAll('.slider__slide');
+
+if (heroes) {
+  var heroSlides = heroes.querySelectorAll('.slider__slide');
 
 
-heroButtons.forEach(function (button, i) {
-  button.addEventListener('click', function () {
+  heroButtons.forEach(function (button, i) {
+    button.addEventListener('click', function () {
 
-    for (var y = 0; y < heroSlides.length; y++) {
-      heroSlides[y].classList.remove('slider__slide--active');
-      heroButtons[y].classList.remove('hero__slider-button--active');
-    }
+      for (var y = 0; y < heroSlides.length; y++) {
+        heroSlides[y].classList.remove('slider__slide--active');
+        heroButtons[y].classList.remove('hero__slider-button--active');
+      }
 
-    this.classList.add('hero__slider-button--active');
-    heroSlides[i].classList.add('slider__slide--active');
+      this.classList.add('hero__slider-button--active');
+      heroSlides[i].classList.add('slider__slide--active');
+    });
   });
-});
-
+}
 
 //Слайдер преимуществ//
 
 var advantagesButtons = Array.prototype.slice.call(document.querySelectorAll('.advantages__btn'));
 var advantages = document.querySelector('.advantages');
-var advantagesSlides = advantages.querySelectorAll('.slider__slide');
 
-advantagesButtons.forEach(function (button, i) {
-  button.addEventListener('click', function () {
+if (advantages) {
+  var advantagesSlides = advantages.querySelectorAll('.slider__slide');
 
-    for (var y = 0; y < advantagesSlides.length; y++) {
-      advantagesSlides[y].classList.remove('slider__slide--active');
-      advantagesButtons[y].classList.remove('advantages__btn--active');
-    }
+  advantagesButtons.forEach(function (button, i) {
+    button.addEventListener('click', function () {
 
-    this.classList.add('advantages__btn--active');
-    advantagesSlides[i].classList.add('slider__slide--active');
+      for (var y = 0; y < advantagesSlides.length; y++) {
+        advantagesSlides[y].classList.remove('slider__slide--active');
+        advantagesButtons[y].classList.remove('advantages__btn--active');
+      }
+
+      this.classList.add('advantages__btn--active');
+      advantagesSlides[i].classList.add('slider__slide--active');
+    });
   });
-});
+}
