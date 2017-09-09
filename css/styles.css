@@ -619,7 +619,8 @@
 }
 
 .main-footer p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .main-footer__row {
@@ -752,7 +753,7 @@
   color: #fff;
 }
 
-p.main-footer__phone {
+.main-footer__phone {
   margin-left: auto;
 }
 
@@ -2105,6 +2106,7 @@ p.main-footer__phone {
 }
 
 .filter__input:checked:active + .filter__label--radio::after {
+  content: "";
   opacity: 0;
 }
 
@@ -2265,8 +2267,6 @@ p.main-footer__phone {
   font-family: inherit;
   font-size: 13px;
   line-height: 36px;
-
-  display: inline-block;
 
   -webkit-transition: opacity 200ms;
   -o-transition: opacity 200ms;
