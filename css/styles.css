@@ -2110,7 +2110,8 @@
 }
 
 .filter__input:checked:active + .filter__label--radio::after {
-  content: "";
+  content: '';
+
   opacity: 0;
 }
 
@@ -2369,17 +2370,18 @@
 }
 
 .paginator__item a {
-  display: inline-block;
-
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 900;
+
+  display: inline-block;
 
   padding: 22px 14px 17px;
 
   -webkit-transition: opacity 200ms;
   -o-transition: opacity 200ms;
   transition: opacity 200ms;
+  vertical-align: baseline;
   text-decoration: none;
   letter-spacing: .2em;
   text-transform: uppercase;
