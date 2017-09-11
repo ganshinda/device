@@ -2346,6 +2346,7 @@
   width: 440px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 12px;
 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2399,7 +2400,7 @@
   display: inline-block;
 
   margin: 0;
-  padding: 22px 30px 18px;
+  padding: 22px 29px 18px;
 
   -webkit-transition: background-color 200ms;
   -o-transition: background-color 200ms;
