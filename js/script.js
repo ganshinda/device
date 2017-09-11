@@ -27,6 +27,7 @@ var popupForm = document.querySelector('.popup-form');
 
 if (popupForm) {
   openingButtonForm.addEventListener('click', function () {
+    event.preventDefault();
     popupForm.classList.toggle('hidden');
   });
 
