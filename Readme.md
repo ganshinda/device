@@ -5,4 +5,11 @@
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github.svg"></a>
 
+#### Ссылки, ведущие на отдельные страницы (или попапы):
+* **Главная**, лого Гллэси (на странице каталога)  - ведет на главную
+* Любая ссылка в дропдаун-списке "Каталог товаров" - ведет в каталог
+* **Напишите нам** ниже блока карты - активирует попап с формой
+* Клик на карту - активирует попап с картой
+
+
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Базовый HTML и CSS](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
